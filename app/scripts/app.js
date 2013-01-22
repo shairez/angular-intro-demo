@@ -7,6 +7,10 @@ var angularDemoApp = angular.module('angularDemoApp', [])
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/add_user', {
+        templateUrl: 'views/add_user.html',
+        controller: 'AddUserCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

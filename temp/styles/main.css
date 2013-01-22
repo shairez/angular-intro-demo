@@ -6161,14 +6161,18 @@ a.label:hover, a.badge:hover {
   cursor: hand;
   cursor: pointer;
 }
+/* line 6, ../../app/styles/main.scss */
+.thumbnail img {
+  height: 250px;
+}
 
-/* line 8, ../../app/styles/main.scss */
+/* line 12, ../../app/styles/main.scss */
 .huggable {
   color: green;
   font-weight: bold;
 }
 
-/* line 13, ../../app/styles/main.scss */
+/* line 17, ../../app/styles/main.scss */
 .not-huggable {
   color: red;
   font-weight: bold;

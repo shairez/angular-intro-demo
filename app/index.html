@@ -24,10 +24,32 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-
-        <div class="container" >
-            <h1>Virtual Hugging App</h1>
-            <br/><br/>    
+             <div class="navbar">
+                 <div class="navbar-inner">
+                     <div class="container" style="width: auto;">
+                         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                             <span class="icon-bar"></span>
+                         </a>
+                         <a class="brand" href="#">Virtual Hugging App</a>
+                         <div class="nav-collapse">
+                             <ul class="nav">
+                                 <li ><a href="#">Home</a></li>
+                                 <li><a href="#/add_user">Add user</a></li>
+                             </ul>
+                          
+                            
+                         </div><!-- /.nav-collapse -->
+                     </div>
+                 </div><!-- /navbar-inner -->
+             </div>
+              
+            </ul>
+        <div class="container-fluid" >
+            <!-- <h1>Virtual Hugging App</h1>
+            <br/><br/>     -->
+           
             <div ng-view></div>
         </div>
 
@@ -37,6 +59,8 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/directives/directives.js"></script>
+        <script src="scripts/services/user_service.js"></script>
+        <script src="scripts/controllers/add_user.js"></script>
         <!-- endbuild -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

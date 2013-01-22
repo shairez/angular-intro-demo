@@ -28,6 +28,7 @@ angularDemoApp
   return {
     restrict: 'E',
     scope: {user: "=userModel"},
+    replace: true,
     templateUrl: "views/thumbnail.html",
     link: function (scope, element, attrs) {
 
@@ -40,4 +41,19 @@ angularDemoApp
       }
     }
   };
-});
+})
+
+.directive('modalWindow', function() {
+  return {
+    restrict: 'E',
+    scope: {headerTitle:"@", modalShow:"="},
+    transclude: true,
+    replace: true,
+    templateUrl: "views/modalwindow.html",
+    link: function (scope, element, attrs) {
+
+      
+    }
+  };
+})
+;

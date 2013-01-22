@@ -11,4 +11,12 @@ angularDemoApp.controller('MainCtrl', function($scope) {
     {name: "Berlad", huggable: true, image: "images/berlad.jpg"}
   ];
 
+  	$scope.huggableClass = function(user){
+        return (user.huggable) ? "huggable" : "not-huggable";
+      }
+
+     $scope.huggableStatus = function(user){
+        return (user.huggable) ? "Sure" : "Not right now";
+      }
+
 });

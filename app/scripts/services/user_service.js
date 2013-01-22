@@ -13,6 +13,7 @@ angularDemoApp.factory('userService', function() {
     {name: "Berlad", huggable: true, image: "images/berlad.jpg"}
   ];
 
+
   // Public API here
   return {
     users: users

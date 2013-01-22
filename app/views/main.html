@@ -6,7 +6,15 @@
 
 
 <ul class="thumbnails">
-	<thumbnail user-model="user" ng-repeat="user in users"></thumbnail>
+
+	<li class="span4" ng-repeat="user in users">
+	    <div class="thumbnail">
+	      <img ng-src="{{user.image}}" title="{{user.name}}">
+	      <h3>Hug {{user.name}}</h3>
+	      <h4>Hug status: <span ng-class="huggableClass(user)">{{huggableStatus(user)}}</span></h4>
+	    </div>
+	</li>
+	
 </ul>
 
 

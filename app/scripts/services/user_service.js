@@ -1,9 +1,7 @@
 'use strict';
 
 angularDemoApp.factory('userService', function() {
-  // Service logic
-  // ...
-
+  
   var users =  [
     {name: "Bar", huggable: true, image: "images/bar.png"},
     {name: "Tzahi", huggable: false, image: "images/tzahi.jpg"},

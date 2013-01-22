@@ -1,124 +1,16 @@
-
-
 <!-- 
-1. directive - angry / good mood
-2. ng-repeat
-3. component - thumbnail
-4. container
-5. controller, ng-model
-6. filter - uppercase, query, custom filter
-7. Routes - add huggable user
-8. DI - user service - demo add and show
+
+1. Routes - Binding controllers and views together
+2. Go back
+3. DI - different types
+	user service - demo add and show
 
 
-<button class="btn" ng-click="toggleShowRules()">Show Rules</button>
 -->
-
-
-
- <!--  <ul class="thumbnails">
-
-	  <li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/bar.png">
-	      <h3>Hug Bar</h3>
-	      <h4>Hug status: <span class="huggable">Sure</span></h4>
-	    </div>
-	  </li>
-
-	<li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/tzahi.jpg">
-	      <h3>Hug Tzahi</h3>
-	      <h4>Hug status: <span class="not-huggable">Not right now</span></h4>
-	    </div>
-	 </li>
-
-	  <li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/natalie.jpeg">
-	      <h3>Hug Natalie</h3>
-	      <h4>Hug status: <span class="huggable">Sure</span></h4>
-	    </div>
-	  </li>
-
-	 <li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/fuad.jpg">
-	      <h3>Hug Fuad</h3>
-	      <h4>Hug status: <span class="huggable">Sure</span></h4>
-	    </div>
-	  </li>
-
-	  <li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/angie.jpeg">
-	      <h3>Hug Angie</h3>
-	      <h4>Hug status: <span class="not-huggable">Not right now</span></h4>
-	    </div>
-	  </li>
-
-	  <li class="span4">
-	    <div class="thumbnail">
-	      <img src="images/berlad.jpg">
-	      <h3>Hug Berlad</h3>
-	      <h4>Hug status: <span class="huggable">Sure</span></h4>
-	    </div>
-	  </li>
-	  
-	</ul> -->
 
 
 <ul class="thumbnails">
 	<thumbnail user-model="user" ng-repeat="user in users"></thumbnail>
 </ul>
 
-<!-- modal window -->
 
-<!-- <div class="modal" ng-show="showRules">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>Hugging Rules</h3>
-  </div>
-  <div class="modal-body">
-    <ol>
-    	<li>You must hug at least 1 person a day</li>
-    	<li>You must hug Tzahi even if he doesn't want to</li>
-    	<li>You must hug Fuad even if he doesn't want to</li>
-    	<li>You must avoid Berlad hug of death</li>
-    	<li>Angie is taken</li>
-    	<li>Bar is one of ours</li>
-    	<li>Natalie is also one of ours</li>
-    	
-    </ol>
-  </div>
-  <div class="modal-footer">
-    <a href="#" class="btn">Close</a>
-    <a href="#" class="btn btn-primary">Save changes</a>
-  </div>
-</div> -->
-
-<modal-window header-title="Hugging Rules" modal-show="showRules">
-    <ol>
-    	<li>You must hug at least 1 person a day</li>
-    	<li>You must hug Tzahi even if he doesn't want to</li>
-    	<li>You must hug Fuad even if he doesn't want to</li>
-    	<li>You must avoid Berlad hug of death</li>
-    	<li>Angie is taken</li>
-    	<li>Bar is one of ours</li>
-    	<li>Natalie is also one of ours</li>
-    </ol>
-</modal-window>
-
-
-
-
-<!-- 
-
-<input type="text" ng-model="query.name" placeholder="Search">
-	
-<ul class="thumbnails">
-	<thumbnail user-model="user" ng-repeat="user in users | filter:query"></thumbnail>
-</ul>
-
--->

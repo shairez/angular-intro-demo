@@ -1,11 +1,12 @@
 'use strict';
 
-angularDemoApp.controller('AddUserCtrl', function(userService, $scope) {
+angularDemoApp.controller('AddUserCtrl', function($scope) {
   
+  	$scope.users = [];
   	$scope.user = {};
 
   	$scope.addUser = function(){
-  		userService.users.push($scope.user);
+  		$scope.users.push($scope.user);
   		$scope.user = {};
   	}
 });
